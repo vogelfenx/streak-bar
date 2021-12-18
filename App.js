@@ -6,7 +6,7 @@ import Constants from 'expo-constants';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Demo</Text>
+      {/* <Text>Demo</Text> */}
       <StreakBar />
     </View>
   );
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
 
-    // backgroundColor: '#fffff4',
-    backgroundColor: '#f6ffe6',
+    backgroundColor: '#fffff4',
+    // backgroundColor: '#f6ffe6',
   },
 });
