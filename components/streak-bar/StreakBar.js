@@ -1,11 +1,13 @@
-import React from "react";
-import { StyleSheet, View, ScrollView, Dimensions } from "react-native";
+import React, { useState } from 'react';
+import { StyleSheet, View, ScrollView} from "react-native";
 import StreakBarItem from "./StreakBarItem";
 
 export default function StreakBar() {
-  const testData = require("../../data/test-data.json");
-  const currentDay = testData.currentWeekday;
-  const currentDayNumber = testData.currentWeekdayNumber;
+
+  // use different test scenarios test-data1 thru test-data3
+  const [streakBarData, setStreakBarData] = useState(require('../../data/test-data1.json'))
+  const currentDay = streakBarData.currentWeekday;
+  const currentDayNumber = streakBarData.currentWeekdayNumber;
 
   return (
     <View style={[styles.container, styles.streakBarShadow]}>
@@ -13,7 +15,7 @@ export default function StreakBar() {
         contentContainerStyle={styles.ScrollViewContainer}
         horizontal={true}
       >
-        {testData.tasks_progress_per_day.map((tasks_progress, index) => {
+        {streakBarData.tasks_progress_per_day.map((tasks_progress, index) => {
           return (
             <View key={index} style={styles.streakBarItem}>
               <StreakBarItem
