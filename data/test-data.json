@@ -1,0 +1,41 @@
+{
+  "startWeekDay": "Tues",
+  "currentWeekday": "Sun",
+  "tasks_progress_per_day": [
+    {
+      "weekday": "Tues",
+      "totalTasksCount": 10,
+      "tasksDoneCount": 1
+    },
+    {
+      "weekday": "Wed",
+      "totalTasksCount": 10,
+      "tasksDoneCount": 3
+    },
+    {
+      "weekday": "Thur",
+      "totalTasksCount": 10,
+      "tasksDoneCount": 0
+    },
+    {
+      "weekday": "Fri",
+      "totalTasksCount": 10,
+      "tasksDoneCount": 1
+    },
+    {
+      "weekday": "Sat",
+      "totalTasksCount": 10,
+      "tasksDoneCount": 5
+    },
+    {
+      "weekday": "Sun",
+      "totalTasksCount": 10,
+      "tasksDoneCount": null
+    },
+    {
+      "weekday": "Mon",
+      "totalTasksCount": 10,
+      "tasksDoneCount": null
+    }
+  ]
+}
