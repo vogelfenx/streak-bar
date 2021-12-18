@@ -31,12 +31,12 @@
     {
       "weekday": "Sun",
       "totalTasksCount": 10,
-      "tasksDoneCount": null
+      "tasksDoneCount": 0
     },
     {
       "weekday": "Mon",
       "totalTasksCount": 10,
-      "tasksDoneCount": null
+      "tasksDoneCount": 0
     }
   ]
 }
