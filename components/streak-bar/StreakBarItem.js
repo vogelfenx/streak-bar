@@ -6,7 +6,7 @@ export default function StreakBarItem(props) {
 
   const isAnyTaskDone = props.tasks_progress.tasksDoneCount > 0 ? true : false
   const isCurrentDay = props.tasks_progress.weekday == props.currentDay ? true : false
-  const isNextDay = props.currentDayNumber <= props.index ? true : false
+  const isNextDay = props.currentDayNumber < props.index + 1 ? true : false
 
   return (
     <View style={styles.container}>
