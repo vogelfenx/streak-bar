@@ -3,9 +3,9 @@ import { MultiArcCircle } from 'react-native-circles';
 
 export default function Circle(props) {
   const radius = props.radius ? props.radius : 10
-  const color = props.color ? props.color : 'black'
-  const backgroundColor = props.radius ? props.backgroundColor : 'white'
-  const width = props.width ? props.width : 1
+  const color = props.circleStyle.color ? props.circleStyle.color : 'black'
+  const backgroundColor = props.circleStyle.backgroundColor ? props.circleStyle.backgroundColor : 'white'
+  const width = props.circleStyle.width ? props.circleStyle.width : 1
 
   return (
     <MultiArcCircle
