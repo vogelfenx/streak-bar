@@ -1,6 +1,7 @@
 {
   "startWeekDay": "Tues",
   "currentWeekday": "Sun",
+  "currentWeekdayNumber": 6,
   "tasks_progress_per_day": [
     {
       "weekday": "Tues",

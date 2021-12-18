@@ -6,7 +6,7 @@ export default function StreakBarItem(props) {
 
   const isAnyTaskDone = props.tasks_progress.tasksDoneCount > 0 ? true : false
   const isCurrentDay = props.tasks_progress.weekday == props.currentDay ? true : false
-  const isNextDay = props.tasks_progress.tasksDoneCount == null ? true : false
+  const isNextDay = props.currentDayNumber <= props.index ? true : false
 
   return (
     <View style={styles.container}>
@@ -20,7 +20,7 @@ export default function StreakBarItem(props) {
       <View style={styles.circleContainer}>
         <Circle
           radius={15}
-          circleStyle={isAnyTaskDone ? styles.anyTaskDone : styles.noTaskDone}
+          circleStyle={isNextDay ? styles.nextDay : isAnyTaskDone ? styles.anyTaskDone : isCurrentDay ? styles.currentDay : styles.noTaskDone }
         />
       </View>
       <Text></Text>
@@ -60,8 +60,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#e8e5ff',
     width: 15
   },
+  currentDay: {
+    color: '#c2a1fa',
+    backgroundColor: '#c2a1fa',
+    width: 1,
+  },
   nextDay: {
     color: '#eceaff',
+    backgroundColor: '#eceaff',
     width: 1
   },
 
