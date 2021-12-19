@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, ScrollView} from "react-native";
 import StreakBarItem from "./StreakBarItem";
 import Constants from 'expo-constants';
 
-export default function StreakBar() {
 
+export default function StreakBar() {
   const [streakBarData, setStreakBarData] = useState(Constants.manifest.extra.testScenario)
   const currentDay = streakBarData.currentWeekday;
   const currentDayNumber = streakBarData.currentWeekdayNumber;
+
+  useEffect(() => {
+    // Make API CALL
+    // fetchStreakBarData()
+  }, []);
 
   return (
     <View style={[styles.container, styles.streakBarShadow]}>
