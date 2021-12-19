@@ -55,7 +55,7 @@ Streak bar gives a user a clear visual of his weekly progress so that he feels m
            test-data2.json
            test-data3.json
      ```
-   - **Configure** one of the scenarios to be used in `app.config.js` configuration file:
+   - **Configure** one of the scenarios to be used in `app.config.js` configuration file & **rebuild** the app:
      ```
      extra: {
        // use different test scenarios test-data1 thru test-data3
