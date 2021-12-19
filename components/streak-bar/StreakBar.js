@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, ScrollView} from "react-native";
 import StreakBarItem from "./StreakBarItem";
+import Constants from 'expo-constants';
 
 export default function StreakBar() {
 
-  // use different test scenarios test-data1 thru test-data3
-  const [streakBarData, setStreakBarData] = useState(require('../../data/test-data1.json'))
+  const [streakBarData, setStreakBarData] = useState(Constants.manifest.extra.testScenario)
   const currentDay = streakBarData.currentWeekday;
   const currentDayNumber = streakBarData.currentWeekdayNumber;
 
