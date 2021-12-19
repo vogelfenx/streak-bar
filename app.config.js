@@ -6,7 +6,7 @@ module.exports = () => {
     return {
       extra: {
         // use different test scenarios test-data1 thru test-data3
-        testScenario: require('./data/test-data3.json'),
+        testScenario: require('./data/test-data1.json'),
       },
     };
   }
