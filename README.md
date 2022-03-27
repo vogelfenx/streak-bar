@@ -1,6 +1,8 @@
 # Streak bar usage & testing
 
-Streak bar gives a user a clear visual of his weekly progress so that he feels motivated to keep up with the app.
+Streak bar gives a user a clear visual of his weekly progress so that he feels motivated to keep up with an app.
+
+![Streak Bar Example](./resource/streak-bar-example.jpg "Streak Bar Example")
 
 ## Features
 
@@ -10,8 +12,6 @@ Streak bar gives a user a clear visual of his weekly progress so that he feels m
   If any task is completed on that day, the daily circle turns green, otherwise it remains with purple stroke and white background.
 - Daily circle turns green, if any task for that day is done, otherwise it turns muted purple (with background).
 - The following days are colored in a neutral color.
-
-  ![Streak Bar Example](./resource/streak-bar-example.jpg "Streak Bar Example")
 
 ## Setup
 
